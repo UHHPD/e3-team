@@ -4,7 +4,7 @@
 #include <cmath>
 
 double poisson(double mu, int k) {
-    return (pow(mu,k)-exp(-1*mu))/(tgamma(k+1));
+    return (pow(mu,k)*exp(-1*mu))/(tgamma(k+1));
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
 
   ofstream fout2("histpoi.txt");
   for(unsigned int k = 0 ; k < zaehler.size() ; ++k) {
-      fout2 << k << " " << zaehler[k] << " " << zaehler.size()*poisson(3.11538,k) << std::endl;
+      fout2 << k << " " << zaehler[k] << " " << 234*poisson(3.11538,k) << std::endl;
     }
     fout2.close();
 }
