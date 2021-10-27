@@ -28,7 +28,7 @@ int main() {
 
   ofstream fout2("histpoi.txt");
   for(unsigned int k = 0 ; k < zaehler.size() ; ++k) {
-      fout2 << k << " " << zaehler[k] << " " << int(zaehler.size()*poisson(3.11538,k)) << std::endl;
+      fout2 << k << " " << zaehler[k] << " " << zaehler.size()*poisson(3.11538,k) << std::endl;
     }
     fout2.close();
 }
