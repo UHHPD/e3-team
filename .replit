@@ -1,2 +1,2 @@
 language = "bash"
-run = "g++ poisson.cc -o poisson && ./poisson"
+run = "g++ likelihood.cc -o likelihood && ./likelihood"
