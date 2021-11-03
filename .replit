@@ -1,0 +1,2 @@
+language = "bash"
+run = "g++ likelihood.cc -o likelihood && ./likelihood"
